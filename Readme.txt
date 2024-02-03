@@ -1,1 +1,1 @@
-github
+https://hidayetoguztamer.github.io/Harum-Merkez-Mudurleri-Calistayi/
