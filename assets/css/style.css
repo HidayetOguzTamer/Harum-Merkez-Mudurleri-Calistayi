@@ -524,7 +524,7 @@ section {
     background: url(../img/section-title-bg.png) no-repeat;
     z-index: -1;
     filter: blur(1.101px);
-    opacity: 0.7699;
+    opacity: 0.525;
 }
 
 .section-title p {
