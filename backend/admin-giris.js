@@ -42,7 +42,7 @@ function refresh() {
 // Read data
 firebase
     .database()
-    .ref("users3/")
+    .ref("users4/")
     .on("value", function (snapshot) {
         document.getElementById("showUsers").innerHTML = "";
         snapshot.forEach(function (childSnapshot) {
@@ -51,7 +51,7 @@ firebase
             let addDiv = document.createElement("tr");
             addDiv.className = "ekle";
             addDiv.innerHTML =
-                '  <td class="col-sm-1"     word-break: break-word;">' +
+                '  <td class="col-sm-2"     word-break: break-word;">' +
                 childData.name +
                 '  <td class="col-sm-1"     word-break: break-word;">' +
                 childData.email +
@@ -61,8 +61,10 @@ firebase
                 childData.unvan +
                 '  <td class="col-sm-1"     word-break: break-word;">' +
                 childData.merkezad +
-                '  <td class="col-sm-3"     word-break: break-word;">' +
+                '  <td class="col-sm-2"     word-break: break-word;">' +
                 childData.merkezozet +
+                '  <td class="col-sm-2"     word-break: break-word;">' +
+                childData.adres +
                 '  <td class="col-sm"     word-break: break-word;">' +
                 childData.gun1 +
                 '  <td class="col-sm"     word-break: break-word;">' +

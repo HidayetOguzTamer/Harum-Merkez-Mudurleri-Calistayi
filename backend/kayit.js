@@ -14,10 +14,12 @@ firebase.initializeApp(firebaseConfig);
 
 // Create a new data
 function createData() {
-    let gun1_check = "",
-        gun2_check = "",
-        yemekEvet = "",
-        yemekHayır = "";
+    // console.log(document.getElementById("yemek-katilim-evet").value);
+
+    let gun1_check = " ",
+        gun2_check = " ",
+        yemekEvet = " ",
+        yemekHayır = " ";
 
     if (document.querySelector(".gun1").checked) {
         gun1_check = document.getElementById("gun1").value;
@@ -28,7 +30,7 @@ function createData() {
     }
 
     if (document.querySelector(".yemekEvet").checked) {
-        yemekEvet = document.getElementById(".yemek-katilim-evet").value;
+        yemekEvet = document.getElementById("yemek-katilim-evet").value;
     }
 
     if (document.querySelector(".yemekhayır").checked) {
@@ -42,6 +44,7 @@ function createData() {
         merkezad: document.getElementById("merkezad").value,
         merkezozet: document.getElementById("merkezozet").value,
         unvan: document.getElementById("unvan").value,
+        adres: document.getElementById("adres").value,
         gun1: gun1_check,
         gun2: gun2_check,
         yemekkatilimEvet: yemekEvet,
@@ -50,7 +53,11 @@ function createData() {
         alerji: document.getElementById("alerji").value,
     };
 
-    firebase.database().ref("users3/").push(newData);
+    firebase.database().ref("users4/").push(newData);
 
     alert("Başarıyla Kayıt Edildi");
+
+    setTimeout(function () {
+        window.location.href = "../index.html";
+    }, 6000);
 }

@@ -64,7 +64,7 @@
             <input placeholder="Merkez Tam Adı" id="merkezad" required="" type="text" required />
             <input placeholder=" Merkez çalışmalarınız Kısaca" id="merkezozet" required="" type="text" required />
             <input placeholder="Ünvan" id="unvan" required="" type="text" required />
-            <input placeholder="Adresiniz" required="" type="text" required />
+            <input placeholder="Adresiniz" required="" type="text" required id="adres" />
 
             <div class="checkbox-wrapper-24">
                 <input type="checkbox" id="gun1" name="gun1" value="1.gun" class="gun1" />
@@ -78,13 +78,13 @@
             </div>
 
             <div class="checkbox-wrapper-24" style="margin-bottom: 10px;">
-                <input type="checkbox" id="yemek-katilim-evet" name="yemek-katilim-evet" value="Kabul"
+                <input type="checkbox" id="yemek-katilim-evet" name="yemek-katilim-evet" value="Evet"
                     class="yemekEvet" />
                 <label for="yemek-katilim-evet">
                     <span><!-- This span is needed to create the "checkbox" element --></span>Social Dinner 'a
                     katılacağım
                 </label>
-                <input type="checkbox" id="yemek-katilim-hayir" name="yemek-katilim-hayir" value="Red"
+                <input type="checkbox" id="yemek-katilim-hayir" name="yemek-katilim-hayir" value="Hayir"
                     class="yemekhayır" />
                 <label for="yemek-katilim-hayir">
                     <span><!-- This span is needed to create the "checkbox" element --></span>Social Dinner 'a
@@ -95,12 +95,15 @@
             <input placeholder="Diyet tipiniz(vejetaryen, pesketaryen vb.)" id="diyet" type="text" />
             <input placeholder="Alerjileriniz" id="alerji" type="text" />
 
-
-
             <button type="button" onclick="createData()" id="save_btn">Kayıt Ol</button>
+
         </form>
     </div>
 
+
+    <span style="text-align: center; margin-top:20px"><a target="_blank" href="https://github.com/Berke-aras"
+            style="color: black; text-decoration:none;">by
+            Berke</a></span>
 
 
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
