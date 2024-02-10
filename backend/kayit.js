@@ -50,7 +50,7 @@ function createData() {
         alerji: document.getElementById("alerji").value,
     };
 
-    firebase.database().ref("users2/").push(newData);
+    firebase.database().ref("users3/").push(newData);
 
     alert("Başarıyla Kayıt Edildi");
 }

@@ -41,7 +41,7 @@ function refresh() {
 // Read data
 firebase
     .database()
-    .ref("users2/")
+    .ref("users3/")
     .on("value", function (snapshot) {
         document.getElementById("showUsers").innerHTML = "";
         snapshot.forEach(function (childSnapshot) {
