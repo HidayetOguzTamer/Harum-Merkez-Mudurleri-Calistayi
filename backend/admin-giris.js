@@ -24,7 +24,8 @@ function login() {
             // Signed in
             var user = userCredential.user;
             // ...
-        }, alert("Giriş Yapıldı. Verileri Geti Butonuna Basınız"))
+            alert("Giriş Yapıldı. Verileri Geti Butonuna Basınız");
+        })
         .catch((error) => {
             var errorCode = error.code;
             var errorMessage = error.message;
